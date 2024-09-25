@@ -5,45 +5,55 @@
 }
 
 @font-face {
-  font-family: "SukhumvitSet-Bold";
-  src: url("../font/SukhumvitSet-Bold.ttf") format("ttf"),
-    url("../font/SukhumvitSet-Bold.ttf") format("ttf");
+  font-family: "sukhumvit_setbold";
+  src: url("../font/sukhumvitset-bold-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SukhumvitSet-Light";
-  src: url("../font/SukhumvitSet-Light.ttf") format("ttf"),
-    url("../font/SukhumvitSet-Light.ttf") format("ttf");
+  font-family: "sukhumvit_setlight";
+  src: url("../font/sukhumvitset-light-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SukhumvitSet-Medium";
-  src: url("../font/SukhumvitSet-Medium.ttf") format("ttf"),
-    url("../font/SukhumvitSet-Medium.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "SukhumvitSet-Text";
-  src: url("../font/SukhumvitSet-Text.ttf") format("ttf"),
-    url("../font/SukhumvitSet-Text.ttf") format("ttf");
+  font-family: "sukhumvit_setmedium";
+  src: url("../font/sukhumvitset-medium-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "SukhumvitSet-Thin";
-  src: url("../font/SukhumvitSet-Thin.ttf") format("ttf"),
-    url("../font/SukhumvitSet-Thin.ttf") format("ttf");
+  font-family: "sukhumvit_setsemi_bold";
+  src: url("../font/sukhumvitset-semibold-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "sukhumvit_settext";
+  src: url("../font/sukhumvitset-text-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-text-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sukhumvit_setthin";
+  src: url("../font/sukhumvitset-thin-webfont.woff2") format("woff2"),
+    url("../font/sukhumvitset-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "SukhumvitSet-Text";
+  font-family: "sukhumvit_settext";
   background-color: #f7f7f7 !important;
 }
 .text-primary {
@@ -59,6 +69,7 @@ body {
   height: 45.47px;
 }
 .btn-primary {
+  font-family: "sukhumvit_setbold";
   width: 170px;
   height: 45px;
   padding: 10px 20px 10px 24px;
@@ -69,6 +80,7 @@ body {
   font-weight: 700;
 }
 .btn-gold {
+  font-family: "sukhumvit_setbold";
   width: 170px;
   height: 45px;
   padding: 10px 20px 10px 24px;
@@ -80,6 +92,7 @@ body {
   background: linear-gradient(180deg, #ceb260 0%, #897846 100%);
 }
 .txt-nav-p {
+  font-family: "sukhumvit_setbold";
   font-size: 14px;
   font-weight: 700;
   color: #646464;
@@ -106,7 +119,7 @@ body {
 .search-icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 20px;
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -120,13 +133,13 @@ body {
   margin-bottom: 15px;
 }
 p {
-  font-family: "SukhumvitSet-Light";
+  font-family: "sukhumvit_settext";
   font-size: 14px;
   font-weight: 400;
   color: #808080;
 }
 .txt-section {
-  font-family: "SukhumvitSet-Light";
+  font-family: "sukhumvit_setsemi_bold";
   font-size: 18px;
   font-weight: 700;
   color: #2d3c68;
@@ -179,16 +192,20 @@ p {
   background: rgba(255, 255, 255, 1);
 }
 .box-filter h5 {
-  font-family: "SukhumvitSet-Light";
+  font-family: "sukhumvit_setsemi_bold";
   font-size: 18px;
   font-weight: 700;
   line-height: 28.57px;
   color: #333333;
 }
 .box-filter label {
-  font-family: "SukhumvitSet-Light";
+  font-family: "sukhumvit_settext";
   font-size: 16px;
   font-weight: 500;
+}
+.box-card,
+p {
+  font-family: "sukhumvit_setthin";
 }
 .radio-container > div {
   display: grid;
