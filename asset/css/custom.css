@@ -7,6 +7,9 @@ a {
   text-decoration: none !important;
 }
 
+.btn:first-child:active {
+  border: none !important;
+}
 @font-face {
   font-family: "sukhumvit_setbold";
   src: url("../font/sukhumvitset-bold-webfont.woff2") format("woff2"),
@@ -312,6 +315,36 @@ input[type="radio"]:checked + label span {
   line-height: 25.39px;
 }
 
+.custom-collapse {
+  background-color: #ffffff;
+  border: none;
+  padding: 25px 50px;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+.custom-collapse-button {
+  color: #293661 !important;
+  background-color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "sukhumvit_setsemi_bold";
+}
+
+.custom-collapse-content p {
+  background-color: #f5f5f500;
+  color: #808080;
+  padding: 10px 35px;
+  line-height: 25.39px;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+
+.padding-faq {
+  padding: 0 140px;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -324,6 +357,12 @@ input[type="radio"]:checked + label span {
 }
 
 @media (max-width: 991px) {
+  .padding-faq {
+    padding: 0 20px;
+  }
+  .custom-collapse {
+    padding: 10px 10px;
+  }
   .btn-primary {
     width: 100% !important;
     text-align: center !important;
