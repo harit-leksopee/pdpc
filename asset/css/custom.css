@@ -66,6 +66,17 @@ body {
 hr {
   border-bottom: 1px solid #e8e8e8 !important;
 }
+p,
+li {
+  font-family: "sukhumvit_settext";
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+}
+.radius-14 {
+  border-radius: 14px;
+}
+
 .text-small {
   font-size: 10px !important;
 }
@@ -193,12 +204,7 @@ hr {
   font-family: "sukhumvit_setbold";
   font-weight: 700;
 }
-p {
-  font-family: "sukhumvit_settext";
-  font-size: 14px;
-  font-weight: 400;
-  color: #808080;
-}
+
 .txt-section {
   font-family: "sukhumvit_setsemi_bold";
   font-size: 18px;
@@ -263,8 +269,7 @@ p {
   font-size: 16px;
   font-weight: 500;
 }
-.box-card,
-p {
+.box-card p {
   font-family: "sukhumvit_setthin";
 }
 .card-large {
@@ -393,6 +398,77 @@ input[type="radio"]:checked + label span {
 .cursor-pointer {
   cursor: pointer;
 }
+.card-large-img {
+  height: 380px;
+  object-fit: contain;
+  background-color: #2d3c68;
+}
+.card-img {
+  object-fit: cover;
+  height: 120px;
+}
+.new-detail {
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 24px;
+  background-color: #fff;
+}
+.new-detail h4 {
+  font-family: "sukhumvit_setsemi_bold";
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3c68;
+  line-height: 38.09px;
+}
+.new-detail h5 {
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "sukhumvit_setsemi_bold";
+}
+.detail-seemore {
+  width: 100%;
+  border-radius: 16px !important;
+  padding: 24px;
+  background-color: #fff;
+}
+.detail-seemore h4 {
+  font-family: "sukhumvit_setsemi_bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3c68;
+}
+.detail-seemore .card-img {
+  height: 96px;
+  object-fit: cover;
+}
+.gradient {
+  position: absolute;
+  height: 96px;
+  background: linear-gradient(
+    180deg,
+    rgba(45, 60, 104, 0) 0%,
+    rgba(45, 60, 104, 0.4) 100%
+  );
+  width: 100%;
+  border-radius: 15px;
+}
+.detail-seemore h5 {
+  color: #333333;
+  font-size: 16px;
+  font-family: "sukhumvit_setsemi_bold";
+  font-weight: 700;
+}
+.w-50-set {
+  width: 50% !important;
+}
+.scroll-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  width: 100%;
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -423,6 +499,12 @@ input[type="radio"]:checked + label span {
   }
   .width-min {
     width: 50px;
+  }
+  .width-min-icon {
+    width: 20px;
+  }
+  .w-50-set {
+    width: 75% !important;
   }
   .text--rigth,
   .text--left {
